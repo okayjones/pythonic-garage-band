@@ -22,12 +22,10 @@ class Band:
         return cls.instances
 
 class Musician:
-    pass
-
-class Guitarist(Musician):
     def __init__(self, name):
         self.name = name
-    
+
+class Guitarist(Musician):
     def __str__(self):
         return f"My name is {self.name} and I play guitar"
 
@@ -43,9 +41,6 @@ class Guitarist(Musician):
         return "face melting guitar solo"
 
 class Bassist(Musician):
-    def __init__(self, name):
-        self.name = name
-
     def __str__(self):
         return f"My name is {self.name} and I play bass"
 
@@ -61,9 +56,6 @@ class Bassist(Musician):
         return "bom bom buh bom"
 
 class Drummer(Musician):
-    def __init__(self, name):
-        self.name = name
-
     def __str__(self):
         return f"My name is {self.name} and I play drums"
 
