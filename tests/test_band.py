@@ -22,15 +22,12 @@ def test_band_repr():
     expected = "Band instance. name=Nirvana, members=[]"
     assert actual == expected
 
-@pytest.mark.skip("pending")
 def test_guitarist_str():
     joan = Guitarist("Joan Jett")
     actual = str(joan)
     expected = "My name is Joan Jett and I play guitar"
     assert actual == expected
 
-
-@pytest.mark.skip("pending")
 def test_guitarist_repr():
     joan = Guitarist("Joan Jett")
     actual = repr(joan)
