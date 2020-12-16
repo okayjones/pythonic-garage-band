@@ -8,8 +8,8 @@ authors = ["Logan Jones <loganemilyjones@mac.com>"]
 python = "^3.9"
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.2"
 black = {version = "^20.8b1", allow-prereleases = true}
+pytest = "^6.2.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
