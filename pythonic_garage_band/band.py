@@ -14,10 +14,8 @@ class Band:
         return f"Band instance. name={self.name}, members={self.members}"
 
     def play_solos(self):
-        solos = []
-        for member in self.members:
-            solos.append(member.play_solo())
-        return solos
+        solos = map(lambda member: member.play_solo(), self.members)
+        return list(solos)
 
     @classmethod
     def to_list(cls):
